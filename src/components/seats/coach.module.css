@@ -1,0 +1,157 @@
+.container {
+
+    display: block;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    margin: 50px 10px 30px;
+    width: 50%;
+
+    border-radius: 30px;
+
+}
+
+.container_none {
+    display: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 16px;
+    padding: 16px;
+}
+
+.row_col__notbooked {
+    background-color: #32a852;
+    margin: 0 6px;
+    padding: 6px 20px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(67, 67, 67, 0.101);
+    cursor: pointer;
+    color: #fff;
+}
+
+.row_col__booked {
+    background-color: #bcbcbc;
+    margin: 0 6px;
+    padding: 6px 20px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(67, 67, 67, 0.101);
+    cursor: pointer;
+}
+
+.spinner {
+    width:40px;
+    height:40px;
+    border:4px solid #007bff;
+    border-top:4px solid #489ffc22;
+    border-radius:50%;
+
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1.2s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 1.2s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    
+    transition-property: transform;
+    animation-name: rotate; 
+    animation-duration: 1.2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .row {
+        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .row_col__notbooked {
+        background-color: #32a852;
+        margin: 0 5px;
+        padding: 5px 12px;
+        border:0;
+        box-shadow:0 0 15px 4px rgba(67, 67, 67, 0.101);
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .row_col__booked {
+        background-color: #bcbcbc;
+        margin: 0 5px;
+        padding: 5px 12px;
+        border:0;
+        box-shadow:0 0 15px 4px rgba(67, 67, 67, 0.101);
+        cursor: pointer;
+    }
+
+    .spinner {
+        width:20px;
+        height:20px;
+        border:2px solid #007bff;
+        border-top:2px solid #489ffc22;
+        border-radius:50%;
+    
+        -webkit-transition-property: -webkit-transform;
+        -webkit-transition-duration: 1.2s;
+        -webkit-animation-name: rotate;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        
+        -moz-transition-property: -moz-transform;
+        -moz-animation-name: rotate; 
+        -moz-animation-duration: 1.2s; 
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        
+        transition-property: transform;
+        animation-name: rotate; 
+        animation-duration: 1.2s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    
+    @-moz-keyframes rotate {
+        from {-moz-transform: rotate(0deg);}
+        to {-moz-transform: rotate(360deg);}
+    }
+    
+    @keyframes rotate {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+    }
+    
+  }
+
+  .hover {
+      background-color: rgb(255, 255, 255);
+      padding: 10px 15px;
+      /* border: 1px solid#4b8fea; */
+      
+      border-radius: 10px;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  }

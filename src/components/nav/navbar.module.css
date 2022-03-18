@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+.nav_logo {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav_rgt {
+    border: 2px solid#fff;
+    padding: 0 10px;
+    margin: 10px 0;
+    border-radius: 15px; 
+}
+
+.nav_rgt__item {
+    font-size: larger;
+    line-height: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav_rgt:hover {
+    background-color: #fff;
+    color: #007bff;
+    
+}
